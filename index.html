@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>User Management</h1>
+    <input type="text" v-model="userName" placeholder="Enter your name">
+    <button @click="saveUser">Save</button>
+    <button @click="getUser">Get User</button>
+    <div v-if="user">
+      <h2>User Information:</h2>
+      <p>Name: {{ user.username }}</p>
+      <p>ID: {{ user.ID }}</p>
+    </div>
+  </div>
+
+
+  <script src = script.js>
+
+  </script>
+</body>
+</html>
